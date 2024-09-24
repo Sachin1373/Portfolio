@@ -3,7 +3,7 @@
   background-color: rgb(242, 231, 231);
   padding: 100px 20px; /* Adjust padding for smaller screens */
   border-radius: 8px;
-  height: 600px; /* Auto height for responsive design */
+  min-height: 600px; /* Auto height for responsive design */
   width: 100%;
   margin-top: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

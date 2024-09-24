@@ -2,7 +2,7 @@
     background-color: rgb(242, 231, 231);
     padding: 25px;
     border-radius: 8px;
-    height: 600px;
+    min-height: 600px;
     width: 100%; /* Adjust width */
     margin-top: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

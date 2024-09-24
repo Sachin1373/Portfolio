@@ -80,7 +80,7 @@ p {
   }
 
   .buttons button {
-    font-size: small;
+    /* font-size: small; */
     padding: 6px 12px;
   }
 }
