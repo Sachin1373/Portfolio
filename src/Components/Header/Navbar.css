@@ -6,15 +6,15 @@
 
 .navbar {
   position: fixed;
-  top: 0;
+  top: 2%;
   height: 60px;
   display: flex;
-  margin-top: 10px;
   width: 95%;
   border-radius: 8px;
   background-color: rgb(242, 231, 231);
   align-items: center;
   justify-content: center;
+  z-index: 1000;
 }
 
 .sections {
@@ -26,14 +26,12 @@
 }
 
 .sections li a {
-  font-size: large;
-  font-weight: 700;
   font-size: 25px;
+  font-weight: 700;
   text-decoration: none; 
   color: black; 
   transition: all 0.1s ease; 
 }
-
 
 .active {
   background-color: rgb(176, 175, 175); 
@@ -46,8 +44,45 @@
   border-radius: 5px; 
 }
 
+/* Media Queries for responsive design */
 
+/* For Tablets and small screens (768px and below) */
+@media (max-width: 768px) {
+  .navbar {
+    height: 50px;
+    width: 100%;
+  }
 
+  .sections {
+    gap: 30px; /* Reduced gap between links */
+  }
 
+  .sections li a {
+    font-size: 20px; /* Smaller font size for links */
+  }
+}
 
+/* For Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    height: 50px;
+    width: 100%;
+    padding: 10px 0;
+  }
 
+  .sections {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    gap: 15px; /* Reduced gap between links */
+    text-align: center;
+  }
+
+  .sections li a {
+    font-size: 18px; /* Further reduced font size */
+  }
+
+  .active {
+    font-size: 18px;
+    padding: 5px;
+  }
+}

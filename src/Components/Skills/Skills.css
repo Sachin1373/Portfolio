@@ -1,50 +1,107 @@
-.skillcon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(242, 231, 231);
-    padding-top: 20px;
-    border-radius: 8px;
-    height: 600px;
-    width: 100%;
-    margin-top: 10px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.skillcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(242, 231, 231);
+  padding-top: 20px;
+  border-radius: 8px;
+  width: 100%;
+  height: 600px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .Collection {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style-type: none;
-    padding-top: 25px;
-    gap:40px;
-    max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-top: 25px;
+  gap: 40px;
+  max-width: 800px;
+}
+
+.collection li {
+  flex: 0 1 calc(16.66% - 20px);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-name {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: Roboto, sans-serif;
+  color: black;
+}
+
+.collection i {
+  font-size: 3rem;
+  color: #333;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .Collection {
+    max-width: 100%;
+    gap: 20px;
   }
-  
+
   .collection li {
-    flex: 0 1 calc(16.66% - 20px);
-    text-align: center;
-    margin-bottom: 15px;
+    flex: 0 1 calc(33.33% - 20px); /* Adjust to 3 items per row for tablets */
   }
-  
-  .skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+
   .skill-name {
-    margin-top: 10px;
-    font-size: 20px;
-    font-weight: 800;
-    font-family: Roboto;
-    color: black;
-    padding: 0 5px; /* Padding for better spacing */
+    font-size: 18px;
   }
-  
+
   .collection i {
-    font-size: 3rem;
-    color: #333;
+    font-size: 2.5rem;
   }
-  
-  
+}
+
+@media (max-width: 768px) {
+  .skillcon{
+    height: auto;
+    
+  }
+  .Collection {
+    gap: 15px;
+  }
+
+  .collection li {
+    flex: 0 1 calc(50% - 15px); /* Adjust to 2 items per row for smaller tablets */
+  }
+
+  .skill-name {
+    font-size: 16px;
+  }
+
+  .collection i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Collection {
+    gap: 10px;
+  }
+
+  .collection li {
+    flex: 0 1 100%; /* Adjust to 1 item per row for mobile screens */
+  }
+
+  .skill-name {
+    font-size: 14px;
+  }
+
+  .collection i {
+    font-size: 1.8rem;
+  }
+}
