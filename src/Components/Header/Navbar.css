@@ -1,0 +1,53 @@
+.navcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  display: flex;
+  margin-top: 10px;
+  width: 95%;
+  border-radius: 8px;
+  background-color: rgb(242, 231, 231);
+  align-items: center;
+  justify-content: center;
+}
+
+.sections {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex;
+  gap: 50px; 
+}
+
+.sections li a {
+  font-size: large;
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: none; 
+  color: black; 
+  transition: all 0.1s ease; 
+}
+
+
+.active {
+  background-color: rgb(176, 175, 175); 
+  color: black; 
+  font-weight: 700; 
+  font-size: large; 
+  text-decoration: none; 
+  padding: 5px 10px; 
+  transition: all 0.3s ease; 
+  border-radius: 5px; 
+}
+
+
+
+
+
+

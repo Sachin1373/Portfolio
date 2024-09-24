@@ -1,0 +1,50 @@
+.About{
+    display: flex;
+    /* text-align: center; */
+   
+    background-color: rgb(242, 231, 231);
+    padding-top: 80px;
+    border-radius: 8px;
+    height: 600px;
+    width: 100%;
+    margin-top: 10px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.left{
+    height: 400px;
+    width: 350px;
+    margin-left: 80px;
+    border-radius: 11px;
+    background-color: black;
+}
+img {
+    height: 400px;
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and shadow */
+    border-radius: 10px; /* Optional: adds rounded corners to the image */
+  }
+  
+  img:hover {
+    transform: translateX(-10px); /* Moves the image up */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* Black shadow with increased spread */
+  }
+  
+  img:active {
+    transform: translateY(-5px); /* Slightly reduced elevation on click */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Reduced shadow effect on click */
+  }
+  .right{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 800px;
+    margin-left: 80px;
+    padding-left: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    font-size: x-large;
+    font-family: 'Robot';
+    word-spacing: 3px;
+    
+  }
+  
