@@ -68,6 +68,7 @@ p {
 @media (max-width: 480px) {
   .home {
     padding-top: 80px;
+    line-height: 85px;
   }
 
   h1 {
